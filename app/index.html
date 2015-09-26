@@ -27,16 +27,19 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
-        <li><a href="http://modernizr.com/">Modernizr</a></li>
-      </ul>
+    <div class="frame">
+      <h1 class="page-title">Random Name Generator</h1>
+      <p class="page-description">This is a simple name generator. Try it out!</p>
+      <div class="length-picker">
+        <label for="length">Choose your length</label>
+        <input type="number" value="6" max="12" min="3" />
+        <a href="#" id="random-length"> or keep it random?</a>
+      </div>
+      <div class="letter-frame" id="letter-holder">
+        Javascript should generate something here.
+      </div>
+      <button class="button">Generate</button>
     </div>
-    
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
