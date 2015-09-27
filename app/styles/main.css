@@ -1,25 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Hind:400,300,600|Oleo+Script);
 body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f6f6f6;
+  font-family: "Hind", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
+.frame {
+  width: 640px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #E3F2FD;
+  box-shadow: 2px 3px 0 #1565C0;
+  border-radius: 2px;
+}
+.frame h1.page-title {
+  font-family: "Oleo Script";
+  text-align: center;
+  font-weight: 400;
+  font-size: 3em;
+  margin: 20px 0 0 0;
+  padding: 0;
+  color: #2196F3;
+  text-shadow: 1px 1px 0 #0D47A1;
+}
+.frame p.page-description {
+  font-weight: 300;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0 0 20px 0;
+  padding-bottom: 7px;
+  color: #7d7d7d;
+  border-bottom: 1px dashed #90CAF9;
+}
+.length-picker {
+  padding: 3px 14px;
+  text-align: center;
+  font-weight: 300;
+}
+.length-picker .input-interface {
+  box-sizing: border-box;
+  display: inline;
+  margin: 0 4px;
+  background: #BBDEFB;
+  letter-spacing: -4px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.input-interface input {
+  font-size: 1em;
+  font-family: "Hind";
+  font-weight: 600;
+  border: none;
+  border-top: 2px #1565C0 solid;
+  border-bottom: 2px #1565C0 solid;
+  background: #90CAF9;
+  outline: none;
+  text-align: center;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.input-interface button {
+  font-size: 1em;
+  font-family: "Hind";
+  border: none;
+  background: #90CAF9;
+  outline: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 20px;
+  -moz-transition: background 300ms;
+  -webkit-transition: background 300ms;
+  transition: background 300ms;
+}
+button#increase {
+  border-right: 2px #1565C0 solid;
+  border-top: 2px #1565C0 solid;
+  border-bottom: 2px #1565C0 solid;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+button#decrease {
+  border-left: 2px #1565C0 solid;
+  border-top: 2px #1565C0 solid;
+  border-bottom: 2px #1565C0 solid;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.input-interface button:hover, .input-interface button:active {
+  background: #2196F3;
+}
+.length-picker a, .length-picker a:visited {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted #7d7d7d;
+  height: 23px;
+  display: inline-block;
+  -webkit-transition: border 400ms, height 400ms;
+  -moz-transition: border 400ms, height 400ms;
+  transition: border 400ms, height 400ms;
+}
+.length-picker a:hover, .length-picker a:active {
+  border-bottom: 1px dashed black;
+  height: 20px;
+}
+.letter-frame {
+  margin: 20px 0;
+  padding: 15px;
+  text-align: center;
+}
+.letter-frame .placeholder {
+  display: inline-block;
+  width: 40px;
+  height: 55px;
+  margin: 0 9px;
+  font-size: 3em;
+  border: 1px solid rgba(21, 101, 192, .5);
+  border-radius: 3px;
+  line-height: 70px;
+  padding: 0;
+  background: white;
+  font-weight: 600;
+  transition: all 400ms;
+}
+.button-frame {
+  text-align: center;
+}
+.button {
+  display: block-inline;
+  font-size: 2em;
+  font-weight: 300;
+  padding: 10px 50px;
+  background: #2196F3;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 2px 3px 0 #1565C0;
 }
 
-.hero-unit h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-}
 
 .browsehappy {
   margin: 0.2em 0;
