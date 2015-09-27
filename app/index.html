@@ -12,6 +12,7 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -27,26 +28,35 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
-        <li><a href="http://modernizr.com/">Modernizr</a></li>
-      </ul>
+    <div class="frame">
+      <h1 class="page-title">Nime</h1>
+      <p class="page-description">A simple random name generator. Give it a try!</p>
+      <div class="length-picker">
+        <label for="length">What's the length?</label>
+        <div class="input-interface">
+          <button id="decrease">-</button>
+          <input type="text" id="length" value="6" max="12" min="3" />
+          <button id="increase">+</button>
+        </div>
+        <a href="#" id="random-length">Keep it random?</a>
+      </div>
+      <div class="letter-frame" id="letter-holder">
+        Javascript should generate something here.
+      </div>
+      <div class="button-frame">
+        <button class="button" id="generate">Generate</button>
+      </div>
     </div>
-    
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/sendRequest.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
